@@ -1,3 +1,3 @@
-# Material React Table
+# Table
 
-npm run dev
+
