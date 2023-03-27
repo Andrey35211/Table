@@ -19,7 +19,7 @@ import {ExportToCsv} from 'export-to-csv';
 import {Delete, Edit, ContentCopy} from '@mui/icons-material';
 import {data, termsOfUse} from '../store/store.js';
 
-const Example = () => {
+const Table = () => {
 
         const handleExportRows = (rows) => {
             csvExporter.generateCsv(rows.map((row) => row.original));
@@ -333,4 +333,4 @@ const validateID = (id) =>
     id
         .match(/\D/g, '');
 
-export default Example;
+export default Table;

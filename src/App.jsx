@@ -1,10 +1,10 @@
 import './App.css'
-import Example from "./components/Table.jsx";
+import Table from "./components/Table.jsx";
 
 const App = (props) => {
     return (
         <div className='app-wrapper'>
-            <Example/>
+            <Table/>
         </div>
     )
 }
