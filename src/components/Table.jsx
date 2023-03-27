@@ -280,7 +280,7 @@ export const CreateNewAccountModal = ({open, columns, onClose, onSubmit}) => {
 
     return (
         <Dialog open={open}>
-            <DialogTitle textAlign="center">Create New Account</DialogTitle>
+            <DialogTitle textAlign="center">Create New Item</DialogTitle>
             <DialogContent>
                 <form onSubmit={(e) => e.preventDefault()}>
                     <Stack
@@ -306,31 +306,12 @@ export const CreateNewAccountModal = ({open, columns, onClose, onSubmit}) => {
             <DialogActions sx={{p: '1.25rem'}}>
                 <Button onClick={onClose}>Cancel</Button>
                 <Button color="secondary" onClick={handleSubmit} variant="contained">
-                    Create New Account
+                    Create New Item
                 </Button>
             </DialogActions>
         </Dialog>
     );
 };
 
-const validateRequired = (value) => !!value.length;
-// const validateEmail = (email) =>
-//     !!email.length &&
-//     email
-//         .toLowerCase()
-//         .match(
-//             /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/,
-//         );
-
-// const inputTemperature = document.querySelectorAll('[data-mask="Temperature"]')
-// const validateTemperature = { // создаем объект параметров
-//     mask: Number + '°C',
-//     thousandsSeparator: ' '
-// }
-
-// const validateTemperature = (Temperature) => age >= 18 && age <= 50;
-const validateID = (id) =>
-    id
-        .match(/\D/g, '');
 
 export default Table;
